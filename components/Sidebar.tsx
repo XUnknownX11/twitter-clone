@@ -21,8 +21,8 @@ function Sidebar() {
     <div className="col-span-2 flex flex-col items-center px-4 md:items-start">
       <Image
         className="relative m-3 h-5 w-5"
-        width="100"
-        height="100"
+        width="200"
+        height="200"
         src={logo}
         alt=""
       />
