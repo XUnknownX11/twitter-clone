@@ -34,7 +34,7 @@ function Tweet({ tweet }: Props) {
   const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault()
 
-    const commentToast = toast.loading('Posting Comment...')
+    const commentToast = toast.loading('🔄Posting Comment...')
 
     const comment: CommentBody = {
       comment: input,
@@ -51,7 +51,7 @@ function Tweet({ tweet }: Props) {
     })
 
     console.log('WOOHOO we made it', result)
-    toast.success('Comment Posted!', {
+    toast.success('✅Comment Posted!✅', {
       id: commentToast,
     })
 

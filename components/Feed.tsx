@@ -15,11 +15,11 @@ function Feed({ tweets: tweetsProp }: Props) {
   console.log(tweets)
 
   const HandleRefresh = async () => {
-    const refreshToast = toast.loading('Refreshing...')
+    const refreshToast = toast.loading('🔄Refreshing...')
     const tweets = await fetchTweets()
     setTweets(tweets)
 
-    toast.success('Feed Updated!', {
+    toast.success('✅Feed Updated!✅', {
       id: refreshToast,
     })
   }
