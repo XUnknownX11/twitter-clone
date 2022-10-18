@@ -10,18 +10,16 @@ import {
   HomeIcon,
 } from '@heroicons/react/24/outline'
 import SiderbarRow from './SiderbarRow'
+import Image from 'next/image'
 import { signIn, signOut, useSession } from 'next-auth/react'
+import logo from '../images/logo-twitter-icon.png'
 
 function Sidebar() {
   const { data: session } = useSession()
 
   return (
     <div className="col-span-2 flex flex-col items-center px-4 md:items-start">
-      <img
-        className="m-3 h-10 w-10"
-        src="../images/logo-twitter-icon.png"
-        alt=""
-      />
+      <Image className="m-3 h-10 w-10" src={logo} alt="" />
 
       <SiderbarRow Icon={HomeIcon} title="Home" />
       <SiderbarRow Icon={HashtagIcon} title="Explore" />
