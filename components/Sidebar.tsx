@@ -19,7 +19,7 @@ function Sidebar() {
 
   return (
     <div className="col-span-2 flex flex-col items-center px-4 md:items-start">
-      <Image className="m-3 h-1 w-1" src={logo} alt="" />
+      <Image objectFit="contain" layout="fill" src={logo} />
 
       <SiderbarRow Icon={HomeIcon} title="Home" />
       <SiderbarRow Icon={HashtagIcon} title="Explore" />
