@@ -1,6 +1,4 @@
-//This imports React
 import React from 'react'
-//This imports the icons from heroicons
 import {
   BellIcon,
   HashtagIcon,
@@ -11,9 +9,7 @@ import {
   UserIcon,
   HomeIcon,
 } from '@heroicons/react/24/outline'
-
 import SiderbarRow from './SiderbarRow'
-
 import { signIn, signOut, useSession } from 'next-auth/react'
 
 function Sidebar() {

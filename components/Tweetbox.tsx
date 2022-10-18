@@ -6,12 +6,12 @@ import React, {
   SetStateAction,
 } from 'react'
 import {
-  PhotographIcon,
-  SearchCircleIcon,
-  EmojiHappyIcon,
+  PhotoIcon,
+  MagnifyingGlassCircleIcon,
+  FaceSmileIcon,
   CalendarIcon,
-  LocationMarkerIcon,
-} from '@heroicons/react/outline'
+  MapPinIcon,
+} from '@heroicons/react/24/outline'
 import { useSession } from 'next-auth/react'
 import { Tweet, TweetBody } from '../typings'
 import { fetchTweets } from '../utlis/fetchTweets'
@@ -97,14 +97,14 @@ function Tweetbox({ setTweets }: Props) {
           />
           <div className=" flex ">
             <div className="flex flex-1 space-x-2 text-twitter">
-              <PhotographIcon
+              <PhotoIcon
                 onClick={() => setImageUrlBoxIsOpen(!imageUrlBoxIsOpen)}
                 className="h-5 w-5 transition-transform duration-150 ease-out hover:scale-150 hover:cursor-pointer"
               />
-              <SearchCircleIcon className="h-5 w-5" />
-              <EmojiHappyIcon className="h-5 w-5" />
+              <MagnifyingGlassCircleIcon className="h-5 w-5" />
+              <FaceSmileIcon className="h-5 w-5" />
               <CalendarIcon className="h-5 w-5" />
-              <LocationMarkerIcon className="h-5 w-5" />
+              <MapPinIcon className="h-5 w-5" />
             </div>
             <button
               onClick={handleSubmit}
